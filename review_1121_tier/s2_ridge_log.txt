@@ -1,0 +1,25 @@
+TIERCHECK camera limit_left 40000 right 41200 center (40576.0, 663.0) x0 40000
+TIERCHECK enter        player tier 0 feet (30, 280) state WakeUp | zone 0 pending -1 | enemies [[0, (72, 280)], [0, (219, 293)], [0, (192, 298)]]
+TIERCHECK shot:01_enter player tier 0 feet (30, 280) state WakeUp | zone 0 pending -1 | enemies [[0, (72, 280)], [0, (219, 293)], [0, (192, 298)]]
+TIERCHECK kill         player tier 0 feet (30, 280) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK goto:300,250 player tier 0 feet (300, 250) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK wait:1.5     player tier 0 feet (300, 250) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK shot:02_ledge_waits player tier 0 feet (300, 250) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK goto:380,240 player tier 0 feet (380, 240) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK jump state TierMove
+TIERCHECK   t0.1 tier 0 feet (380, 209) TierMove
+TIERCHECK   t1.0 tier 1 feet (380, 182) Idle
+TIERCHECK jump         player tier 1 feet (380, 182) state Idle | zone 1 pending -1 | enemies [[1, (455, 169)], [1, (545, 173)], [1, (520, 178)]]
+TIERCHECK shot:03_climbed player tier 1 feet (380, 182) state Idle | zone 1 pending -1 | enemies [[1, (455, 169)], [1, (545, 173)], [1, (520, 178)]]
+TIERCHECK wait:1.5     player tier 1 feet (380, 182) state Idle | zone 1 pending -1 | enemies [[1, (412, 175)], [1, (506, 178)], [1, (486, 179)]]
+TIERCHECK shot:04_ledge_zone player tier 1 feet (380, 182) state Idle | zone 1 pending -1 | enemies [[1, (412, 175)], [1, (506, 178)], [1, (486, 179)]]
+TIERCHECK kill         player tier 1 feet (380, 182) state Idle | zone 2 pending 2 | enemies []
+TIERCHECK goto:450,182 player tier 1 feet (450, 182) state Idle | zone 2 pending 2 | enemies []
+TIERCHECK drop TierMove seen true
+TIERCHECK down         player tier 0 feet (450, 240) state Idle | zone 2 pending -1 | enemies [[0, (649, 268)], [0, (683, 292)], [0, (607, 301)]]
+TIERCHECK shot:05_dropped player tier 0 feet (450, 240) state Idle | zone 2 pending -1 | enemies [[0, (649, 268)], [0, (683, 292)], [0, (607, 301)]]
+TIERCHECK wait:1.5     player tier 0 feet (0, 222) state Idle | zone 2 pending -1 | enemies [[0, (622, 266)], [0, (648, 287)], [0, (542, 284)]]
+TIERCHECK shot:06_zone3 player tier 0 feet (0, 222) state Idle | zone 2 pending -1 | enemies [[0, (622, 266)], [0, (648, 287)], [0, (542, 284)]]
+TIERCHECK kill         player tier 0 feet (0, 222) state Idle | zone -1 pending -1 | enemies []
+TIERCHECK exit -> MapSwamp
+TIERCHECK exit         player tier 0 feet (-11585, 194) state Idle | zone -1 pending -1 | enemies [[-1, (-11549, 163)], [-1, (-11422, 177)], [-1, (-11524, 313)], [-1, (-11399, 340)]]

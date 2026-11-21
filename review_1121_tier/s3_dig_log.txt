@@ -1,0 +1,19 @@
+TIERCHECK camera limit_left 40000 right 41200 center (40576.0, 444.0) x0 40000
+TIERCHECK enter        player tier 1 feet (40, 168) state Idle | zone 0 pending -1 | enemies [[1, (179, 166)], [1, (228, 176)], [1, (228, 164)]]
+TIERCHECK shot:01_enter player tier 1 feet (40, 168) state Idle | zone 0 pending -1 | enemies [[1, (179, 166)], [1, (228, 176)], [1, (228, 164)]]
+TIERCHECK kill         player tier 1 feet (40, 168) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK goto:200,186 player tier 1 feet (200, 186) state Idle | zone 1 pending 1 | enemies []
+TIERCHECK drop TierMove seen true
+TIERCHECK down         player tier 0 feet (200, 270) state Idle | zone 1 pending -1 | enemies [[0, (550, 262)], [0, (635, 261)], [0, (478, 296)], [0, (368, 298)]]
+TIERCHECK shot:02_dropped player tier 0 feet (200, 270) state Idle | zone 1 pending -1 | enemies [[0, (550, 262)], [0, (635, 261)], [0, (478, 296)], [0, (368, 298)]]
+TIERCHECK wait:1.5     player tier 0 feet (200, 270) state Idle | zone 1 pending -1 | enemies [[0, (524, 263)], [0, (561, 266)], [0, (462, 294)], [0, (321, 290)]]
+TIERCHECK shot:03_zone2 player tier 0 feet (200, 270) state Idle | zone 1 pending -1 | enemies [[0, (524, 263)], [0, (561, 266)], [0, (462, 294)], [0, (321, 290)]]
+TIERCHECK kill         player tier 0 feet (200, 270) state Idle | zone -1 pending -1 | enemies []
+TIERCHECK goto:200,272 player tier 0 feet (200, 272) state Idle | zone -1 pending -1 | enemies []
+TIERCHECK jump state Jump
+TIERCHECK   t0.1 tier 0 feet (200, 272) Jump
+TIERCHECK   t1.0 tier 0 feet (200, 272) Idle
+TIERCHECK jump         player tier 0 feet (200, 272) state Idle | zone -1 pending -1 | enemies []
+TIERCHECK shot:04_no_climb player tier 0 feet (200, 272) state Idle | zone -1 pending -1 | enemies []
+TIERCHECK exit -> MapPump
+TIERCHECK exit         player tier 0 feet (-11444, 240) state Idle | zone -1 pending -1 | enemies [[-1, (-11511, 258)], [-1, (-11424, 278)], [-1, (-11382, 312)]]
